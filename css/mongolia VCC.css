@@ -1,0 +1,755 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;900&display=swap');
+
+
+body {
+   margin: 0;
+   padding: 0;
+   font-family: 'Inconsolata', monospace;
+   width: 100vw;
+   color: var(--text-color);
+   background-color: var(--bg-color);
+   transition: background-color 1s, color 1s;
+   overflow-y: hidden;
+}
+.navigation{
+   display: flex;
+}
+.logo{
+   margin: 20px 0 0 5%;
+   width: 50%;
+}
+.ul{
+   display: flex;
+   justify-content: flex-end;
+   width: 50%;
+   margin-right: 5%;
+}
+.li{
+   margin: 20px;
+}
+a{
+    text-decoration: none;
+    color:var(--text-color);
+ }
+ .light{
+    cursor:pointer;
+    transition:cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+    transition-timing-function: linear;
+    border-radius: 50px 50px 0 0;
+ }
+ .light:hover{
+    background: linear-gradient(to top, var(--bg-color), #ffffff5c, #ececec);
+    color: #000000;
+ }
+
+  /*larger laptops & desktops*/
+  @media screen and (min-width:1920px){
+    /*h-track*/
+     *, *::before, *::after {
+        box-sizing: border-box;
+      }
+      .title{
+        display: block;
+        position: relative;
+        text-align: center;
+    }
+    .title h1{
+        color: var(--text-color);
+    }
+      .h-track {
+        width: 100%;
+        height: 100vh;
+        overflow-x: auto;
+        position: relative;
+        overflow-y: hidden;
+      }
+      .h-track .h-content-container {
+        position: relative;
+        max-width: unset;
+        width: fit-content;
+        height: 100%;
+        display: flex;
+        align-items: stretch;
+        transition: transform 0.2s linear;
+      }
+      .h-track .h-content-container > * {
+        display: grid;
+        place-items: Center;
+        min-width: 100vw;
+        height: 100%;
+      }
+      .empathize{
+        width: 90vw;
+        height: 100vh;
+        display: flex;
+      }
+      .empathize p{
+        width: 40%;
+        line-height: 29px;
+        font-size: 18pt;
+        color: aliceblue;
+        margin: 15px;
+      }
+      .empathize p b{
+        font-size: 23pt;
+      }
+      .empathize .bb{
+        color: #1500ff;
+      }
+      .empathize p button{
+        background: #ffffff;
+        border: 1px solid #1500ff;
+        box-shadow: inset 5px 5px 8px rgb(255 255 255 / 60%);
+        border-radius: 20px;
+        color: #1500ff;
+        padding: 8px 12px;
+        cursor: pointer;
+        opacity: 0.8;
+        transition:cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
+       }
+       .empathize p button:hover{
+        background: #151515;
+        border: 1px solid #ffffff;
+        box-shadow: inset 5px 5px 8px rgb(255 255 255 / 60%);
+        border-radius: 20px;
+        color: #ffffff;
+        padding: 8px 12px;
+        cursor: pointer;
+        opacity: 0.8;
+       }
+      .empathize .pic{
+        width: 78%;
+      }
+      .empathize .pic img{
+        overflow: hidden;
+        transform: scale(1,1);
+        transition: all 1s ease-out;
+      }
+      .empathize .pic img:hover{
+        transform: scale(1.13,1.13);
+      }
+      #relation{
+        width: 75%;
+        margin: 75px 0 0 35px
+      }
+      #A{
+        width: 50%;
+        position: relative;
+        left: 70px;
+        top: 20px;
+      }
+      #B{
+        width: 40%;
+        margin: 0;
+        position: relative;
+        bottom: 50px;
+        left: 70px;
+      }
+      #C{
+        width: 40%;
+        margin: 5px 20px;
+        position: relative;
+        left: 600px;
+        bottom: 50px;
+      }
+      #D{
+        width: 45%;
+        position: relative;
+        bottom: 50px;
+        right: 390px;
+      }
+      .invisible-scrollbar {
+        scrollbar-width: none;
+      }
+      
+      .invisible-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      
+      .progress-bar {
+        margin: 10px auto;
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 100%;
+        max-width: 50%;
+        height: 10px;
+        border-radius: 5px;
+        border: 1px solid var(--text-color);
+        overflow: hidden;
+      }
+      .progress-bar::before {
+        content: "";
+        display: block;
+        background-color: var(--text-color);
+        height: 100%;
+        width: var(--scroll-pct);
+      }
+      }
+    
+ /*large laptops & desktops*/
+ @media screen and (max-width:1919px){
+/*h-track*/
+ *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  .title{
+    display: block;
+    position: relative;
+    text-align: center;
+}
+.title h1{
+    color: var(--text-color);
+}
+  .h-track {
+    width: 100%;
+    height: 100vh;
+    overflow-x: auto;
+    position: relative;
+    overflow-y: hidden;
+  }
+  .h-track .h-content-container {
+    position: relative;
+    max-width: unset;
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+    transition: transform 0.2s linear;
+  }
+  .h-track .h-content-container > * {
+    display: grid;
+    place-items: Center;
+    min-width: 100vw;
+    height: 100%;
+  }
+  .empathize{
+    width: 90vw;
+    height: 100vh;
+    display: flex;
+  }
+  .empathize p{
+    width: 40%;
+    line-height: 23px;
+    font-size: 17px;
+    color: aliceblue;
+    margin: 15px;
+  }
+  .empathize .bb{
+    color: #1500ff;
+  }
+  .empathize p button{
+    background: #ffffff;
+    border: 1px solid #1500ff;
+    box-shadow: inset 5px 5px 8px rgb(255 255 255 / 60%);
+    border-radius: 20px;
+    color: #1500ff;
+    padding: 8px 12px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition:cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
+   }
+   .empathize p button:hover{
+    background: #151515;
+    border: 1px solid #ffffff;
+    box-shadow: inset 5px 5px 8px rgb(255 255 255 / 60%);
+    border-radius: 20px;
+    color: #ffffff;
+    padding: 8px 12px;
+    cursor: pointer;
+    opacity: 0.8;
+   }
+  .empathize .pic{
+    width: 78%;
+  }
+  .empathize .pic img{
+    overflow: hidden;
+    transform: scale(1,1);
+    transition: all 1s ease-out;
+  }
+  .empathize .pic img:hover{
+    transform: scale(1.1,1.1);
+  }
+  #relation{
+    width: 75%;
+    margin: 75px 0 0 35px
+  }
+  #A{
+    width: 50%;
+    position: relative;
+    left: 70px;
+    top: 20px;
+  }
+  #B{
+    width: 40%;
+    margin: 0;
+    position: relative;
+    bottom: 50px;
+    left: 70px;
+  }
+  #C{
+    width: 40%;
+    margin: 5px 20px;
+    position: relative;
+    left: 500px;
+    bottom: 50px;
+  }
+  #D{
+    width: 45%;
+    position: relative;
+    bottom: 50px;
+    right: 310px;
+  }
+  .invisible-scrollbar {
+    scrollbar-width: none;
+  }
+  
+  .invisible-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .progress-bar {
+    margin: 10px auto;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+    max-width: 50%;
+    height: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--text-color);
+    overflow: hidden;
+  }
+  .progress-bar::before {
+    content: "";
+    display: block;
+    background-color: var(--text-color);
+    height: 100%;
+    width: var(--scroll-pct);
+  }
+  }
+
+  /*medium labtops & desktops*/
+  @media screen and (max-width:1450px){
+  /*h-track*/
+   *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    .title{
+      display: block;
+      position: relative;
+      text-align: center;
+  }
+  .title h1{
+      color: var(--text-color);
+  }
+    .h-track {
+      width: 100%;
+      height: 100vh;
+      overflow-x: auto;
+      position: relative;
+      overflow-y: hidden;
+    }
+    .h-track .h-content-container {
+      position: relative;
+      max-width: unset;
+      width: fit-content;
+      height: 100%;
+      display: flex;
+      align-items: stretch;
+      transition: transform 0.2s linear;
+    }
+    .h-track .h-content-container > * {
+      display: grid;
+      place-items: Center;
+      min-width: 100vw;
+      height: 100%;
+    }
+    .empathize{
+      width: 90vw;
+      height: 100vh;
+      display: flex;
+    }
+    .empathize p{
+      width: 45%;
+      line-height: 17pt;
+      font-size: 14pt;
+      color: aliceblue;
+      margin: 15px;
+    }
+    .empathize .bb{
+      color: #1500ff;
+    }
+    .empathize p button{
+        background: #ffffff;
+        border: 1px solid #1500ff;
+        box-shadow: inset 5px 5px 8px rgb(255 255 255 / 60%);
+        border-radius: 20px;
+        color: #1500ff;
+        padding: 8px 12px;
+        cursor: pointer;
+        opacity: 0.8;
+        transition:cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
+       }
+       .empathize p button:hover{
+        background: #151515;
+        border: 1px solid #ffffff;
+        box-shadow: inset 5px 5px 8px rgb(255 255 255 / 60%);
+        border-radius: 20px;
+        color: #ffffff;
+        padding: 8px 12px;
+        cursor: pointer;
+        opacity: 0.8;
+       }
+    .empathize .pic{
+      width: 70%;
+    }
+    .empathize .pic img{
+      overflow: hidden;
+      transform: scale(1,1);
+      transition: all 1s ease-out;
+    }
+    .empathize .pic img:hover{
+      transform: scale(1.05,1.05);
+    }
+    #relation{
+      width: 100%;
+      margin: 50px 0 0 35px
+    }
+    #A{
+      width: 55%;
+      position: relative;
+      left: 20px;
+    }
+    #B{
+      width: 45%;
+      position: relative;
+      bottom: 215px;
+      left: 450px;
+    }
+    #C{
+      margin: 0;
+      width: 40%;
+      position: relative;
+      bottom: 3px;
+      left: 80px;
+    }
+    #D{
+      width: 55%;
+      position: relative;
+      bottom: 230px;
+      left: 5px;
+    }
+    .invisible-scrollbar {
+      scrollbar-width: none;
+    }
+    
+    .invisible-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    
+    .progress-bar {
+      margin: 10px auto;
+      position: fixed;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 100%;
+      max-width: 50%;
+      height: 10px;
+      border-radius: 5px;
+      border: 1px solid var(--text-color);
+      overflow: hidden;
+    }
+    .progress-bar::before {
+      content: "";
+      display: block;
+      background-color: var(--text-color);
+      height: 100%;
+      width: var(--scroll-pct);
+    }
+    }
+
+    @media screen and (max-width:1381px){
+  /*small labtops & desktops*/
+    
+  /*h-track*/
+   *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    .title{
+      display: block;
+      position: relative;
+      text-align: center;
+  }
+  .title h1{
+      color: var(--text-color);
+  }
+    .h-track {
+      width: 100%;
+      height: 100vh;
+      overflow-x: auto;
+      position: relative;
+      overflow-y: hidden;
+    }
+    .h-track .h-content-container {
+      position: relative;
+      max-width: unset;
+      width: fit-content;
+      height: 100%;
+      display: flex;
+      align-items: stretch;
+      transition: transform 0.2s linear;
+    }
+    .h-track .h-content-container > * {
+      display: grid;
+      place-items: Center;
+      min-width: 100vw;
+      height: 100%;
+    }
+    .empathize{
+      width: 90vw;
+      height: 100vh;
+      display: flex;
+    }
+    .empathize p{
+      width: 35%;
+      line-height: 14pt;
+      font-size:12pt;
+      color: aliceblue;
+      margin: 15px;
+    }
+    .empathize p button{
+        background: #ffffff;
+        border: 1px solid #1500ff;
+        box-shadow: inset 5px 5px 8px rgb(255 255 255 / 60%);
+        border-radius: 20px;
+        color: #1500ff;
+        padding: 8px 12px;
+        cursor: pointer;
+        opacity: 0.8;
+        transition:cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
+       }
+       .empathize p button:hover{
+        background: #151515;
+        border: 1px solid #ffffff;
+        box-shadow: inset 5px 5px 8px rgb(255 255 255 / 60%);
+        border-radius: 20px;
+        color: #ffffff;
+        padding: 8px 12px;
+        cursor: pointer;
+        opacity: 0.8;
+       }
+    .empathize .bb{
+      color: #1500ff;
+    }
+    .empathize .pic{
+      width: 65%;
+    }
+    .empathize .pic img{
+      overflow: hidden;
+      transform: scale(1,1);
+      transition: all 1s ease-out;
+    }
+    .empathize .pic img:hover{
+      transform: scale(1.15,1.15);
+    }
+    #relation{
+      width: 75%;
+      margin: 75px 0 0 35px
+    }
+    #A{
+      width: 45%;
+      margin: 20px 0 0 20px;
+    }
+    #B{
+      width: 40%;
+      margin: 0;
+      position: relative;
+      bottom: 3px;
+      left: 15px;
+    }
+    #C{
+      width: 35%;
+      margin: 5px 20px;
+      position: relative;
+      left: 28px;
+    }
+    #D{
+      width: 45%;
+      position: relative;
+      bottom: 3px;
+      left: 5px;
+    }
+    .invisible-scrollbar {
+      scrollbar-width: none;
+    }
+    
+    .invisible-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    
+    .progress-bar {
+      margin: 10px auto;
+      position: fixed;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 100%;
+      max-width: 50%;
+      height: 10px;
+      border-radius: 5px;
+      border: 1px solid var(--text-color);
+      overflow: hidden;
+    }
+    .progress-bar::before {
+      content: "";
+      display: block;
+      background-color: var(--text-color);
+      height: 100%;
+      width: var(--scroll-pct);
+    }
+    }
+
+    @media screen and (max-width:1241px){
+      /*tablets*/
+        
+      /*h-track*/
+       *, *::before, *::after {
+          box-sizing: border-box;
+        }
+        .title{
+          display: block;
+          position: relative;
+          text-align: center;
+      }
+      .title h1{
+          color: var(--text-color);
+      }
+        .h-track {
+          width: 100%;
+          height: 100vh;
+          overflow-x: auto;
+          position: relative;
+          overflow-y: hidden;
+        }
+        .h-track .h-content-container {
+          position: relative;
+          max-width: unset;
+          width: fit-content;
+          height: 100%;
+          display: flex;
+          align-items: stretch;
+          transition: transform 0.2s linear;
+        }
+        .h-track .h-content-container > * {
+          display: grid;
+          place-items: Center;
+          min-width: 100vw;
+          height: 100%;
+        }
+        .empathize{
+          width: 90vw;
+          height: 100vh;
+          display: flex;
+        }
+        .empathize p{
+          width: 35%;
+          line-height: 18px;
+          font-size: 12pt;
+          color: aliceblue;
+          margin: 15px;
+        }
+        .empathize .bb{
+          color: #1500ff;
+        }
+        .empathize p button{
+            background: #ffffff;
+            border: 1px solid #1500ff;
+            box-shadow: inset 5px 5px 8px rgb(255 255 255 / 60%);
+            border-radius: 20px;
+            color: #1500ff;
+            padding: 8px 12px;
+            cursor: pointer;
+            opacity: 0.8;
+            transition:cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
+           }
+           .empathize p button:hover{
+            background: #151515;
+            border: 1px solid #ffffff;
+            box-shadow: inset 5px 5px 8px rgb(255 255 255 / 60%);
+            border-radius: 20px;
+            color: #ffffff;
+            padding: 8px 12px;
+            cursor: pointer;
+            opacity: 0.8;
+           }
+        .empathize .pic{
+          width: 65%;
+        }
+        .empathize .pic img{
+          overflow: hidden;
+          transform: scale(1,1);
+          transition: all 1s ease-out;
+        }
+        .empathize .pic img:hover{
+          transform: scale(1.15,1.15);
+        }
+        #relation{
+          width: 75%;
+          margin: 75px 0 0 35px
+        }
+        #A{
+          width: 50%;
+          margin: 20px 0 0 20px;
+        }
+        #B{
+          width: 35%;
+          margin: 0;
+          position: relative;
+          bottom: 65px;
+        }
+        #C{
+          width: 30%;
+          margin: 5px 20px;
+          position: relative;
+          bottom: 70px;
+          left: 400px;
+        }
+        #D{
+          width: 40%;
+          position: relative;
+          bottom: -30px;
+          left: -130px;
+        }
+        .invisible-scrollbar {
+          scrollbar-width: none;
+        }
+        
+        .invisible-scrollbar::-webkit-scrollbar {
+          display: none;
+        }
+        
+        .progress-bar {
+          margin: 10px auto;
+          position: fixed;
+          bottom: 0;
+          left: 50%;
+          transform: translate(-50%, 0);
+          width: 100%;
+          max-width: 50%;
+          height: 10px;
+          border-radius: 5px;
+          border: 1px solid var(--text-color);
+          overflow: hidden;
+        }
+        .progress-bar::before {
+          content: "";
+          display: block;
+          background-color: var(--text-color);
+          height: 100%;
+          width: var(--scroll-pct);
+        }
+        }

@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;900&display=swap');
+
+body {
+   margin: 0;
+   padding: 0;
+   font-family: 'Inconsolata', monospace;
+   width: 100vw;
+   overflow-x: hidden;
+   background-color: #151515;
+}
+header{
+   position: fixed;
+   top: 1%;
+	left: 50%;
+	translate: -50%;
+	width: 80vw;
+	max-width: calc(100% - 2rem);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+   z-index: 999;
+}
+.navigation{
+   display: flex;
+   position: relative;
+   width: 80vw;
+}
+.logo{
+   margin: 20px 0 0 5%;
+   width: 50%;
+}
+#lo{
+   color: aliceblue;
+}
+.ul{
+   display: flex;
+   justify-content: flex-end;
+   width: 50%;
+   margin-right: 5%;
+}
+.li{
+   margin: 20px;
+}
+a{
+   text-decoration: none;
+   color: #1500ff;
+}
+.light{
+   cursor:pointer;
+   transition:cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+   transition-timing-function: linear;
+   border-radius: 80px 80px 0 0;
+}
+.light:hover{
+   background: linear-gradient(to top, #15151500, #ffffff5c, #ececec);
+   color: #000000;
+}
+
+/*introduction*/
+.me{
+   /*background-color: #392bff;*/
+   width: 80vw;
+   height: 50vh;
+   margin: 3% 10%;
+   display: flex;
+}
+.intro{
+   /*background-color: #b10000;*/
+   width: 50%;
+   padding: 5% 0 0 10%;
+}
+.intro p{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-weight: lighter;
+   line-height: 1.5em;
+   color: #c4c4c4;
+}
+.intro p b{
+  color: #ffffff;
+}
+.selfpic{
+   /*background-color: #FFF;*/
+   width: 50%;
+   overflow: hidden;
+}
+.selfpic img{
+   width: 40%;
+   height: auto;
+   margin: 15% 0 0 10%;
+   filter: saturate(0);
+}
+.text{
+   color: #FFF;
+   width: 100vw;
+   height: 30vh;
+   overflow: hidden;
+}
+
+.word {
+   position: absolute;
+   cursor: grab;
+   font-size: 25px;
+   color: #ffffff;
+}
+
+.word.highlighted {
+   font-weight: bold;
+   color: #1500ff;
+}
+
+/*responsive card grid*/
+
+.works{
+   max-width: 100vw;
+   margin: 5%;
+}
+
+.cards {
+   display: flex;
+   flex-wrap: wrap;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+.cards_item {
+   display: flex;
+   padding: 1rem;
+}
+
+@media (min-width: 800px) {
+  .cards_item {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .cards_item {
+    width: 30%;
+  }
+}
+
+.card {
+   background-color: rgba(255, 255, 255, 0);
+   border-radius: 0.25rem;
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+}
+
+.card_image {
+   filter: saturate(0%);
+}
+
+.card_image:hover{
+   filter: saturate(100%);
+   cursor: url('/img/cursor/Camel\ Emoji.png'),auto;
+}
+
+.card_image img,video {
+   height: auto;
+   max-width: 100%;
+   vertical-align: middle;
+   object-fit: contain;
+}
+
+.card_content {
+   padding: 1rem;
+   background: #151515;
+   background: linear-gradient(to bottom left, #151515 40%, #1500ff 100%);
+   background-size: 300% 300%;
+   animation: AnimationName 10s ease infinite;
+}
+
+ @keyframes AnimationName {
+   0%{background-position:84% 0%}
+   50%{background-position:17% 100%}
+   100%{background-position:84% 0%}
+ }
+
+ .card_title {
+   color: #ffffff;
+   font-size: 1.1rem;
+   font-weight: 700;
+   letter-spacing: 1px;
+   text-transform: capitalize;
+   margin: 0px;
+}
+
+.card_text {
+   color: #ffffff;
+   font-size: 0.875rem;
+   line-height: 1.5;
+   margin-bottom: 1.25rem;    
+   font-weight: 400;
+}
+
+.btn {
+   color: #f3f3f3;
+   background-color: #151515;
+   padding: 0.8rem;
+   font-size: 14px;
+   text-transform: uppercase;
+   font-weight: 400;
+   display: block;
+   width: 100%;
+   cursor: pointer;
+   transition:cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+   border-width: 0.5px;
+   border-color: #f3f3f36e;
+}
+
+.btn:hover {
+   background-color: #f3f3f3;
+   color: #151515;
+}
+

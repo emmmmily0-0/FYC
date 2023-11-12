@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR | Digital Media</title>
+    <link rel="stylesheet" href="./css/old-sayings.css">
+</head>
+<body>
+    <header>
+        <div class="navigation">
+          <div class="logo"><a id="lo" href="./index.html">emmmmily</a></div>
+          <div class="ul">
+            <a href="./About.html" target="_blank" class="light">
+              <div class="li">
+                <p>About</p>
+              </div>
+            </a>
+            <a href="./CV/Chou FangYu_CV.pdf" class="light" download="Chou FangYu_CV.pdf">
+              <div class="li">
+                <p>CV</p>
+              </div>
+            </a>
+            <a href="#Playground" class="light">
+              <div class="li">
+                <p>Playground</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </header>
+      
+      <div style="padding:50% 0 0 0;position:relative;">
+        <iframe src="https://player.vimeo.com/video/866295136?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay;fullscreen;picture-in-picture"  style="position:absolute;top:10%;left:15%;width:70%;height:70%;" title="Graduation-Project">
+        </iframe>
+      </div>
+      
+
+      <main>        
+        <div class="text">me as student passion 107 years of experiment, I have developed a strong interest in crafting innovative words efficient technology solutions. My passion for technology words art led me tech T-shirt AR cool NTUA media digital challenge happiness 不聽老人言 illustration irony listen to 吃虧就是占便宜 我只要錢 salary design experiment social "Graduation-Project" Don't slaves 我是為你好 words am overworked 吃苦當吃補 communication 做人要認份 吹我才會涼 and make a 我不要年輕 impact in exhausted 年輕就是本錢 elderly young not 沒錢鐵定不快樂 workplace Artivive 金錢買不到快樂 my old men sayings 聽你在那唬 是你還太嫩 心靜自然涼 最後過勞 能者多勞</div>
+      </main>
+      
+      <container>
+        <div class="process">
+          <div class="text">
+            <h1>Design Concept</h3>
+            <h3>"An old man's sayings are seldom untrue."</h3>
+            I firmly believe that most Taiwanese people are familiar with this proverb. It used to seem like positive and inspiring words. However, it is really a trash talking for young people. Therefore, we design a series of augmented reality effects to satirize these common old generation's sayings today. When people scan the illustrations on T-shirts with their mobile phones, the AR effects will appear the content that stands for the idea of young generation.
+          </div>
+          <div class="pic">
+            <img src="./畢業製作/ex1.jpeg">
+          </div>
+        </div>
+        <div class="process">
+          <div class="text">
+            <h1>Creation Techniques</h1>
+            <h3>❶ Illustrations on T-shirt</h3>
+            We originally wanted to take advantage of face detection techniques such as Instagram filters, so we had tried out Spark AR to create AR filters on Instagram. Nonetheless, it is not convenient to experience when everyone wears masks during the Covid-19 pandemic. At the same time, we have observed that young people in Taiwan like to wear T-shirt, which may be a better medium for AR detection. We believe that the illustrations of T-shirts can symbolize the thinking of one generation, so we combined our themes and designed a series of "old man's words" illustrations.
+          </div>
+          <div class="text">
+            <h1>///</h1>
+            <h3>❷ AR on social media</h3>
+            Young people are accustomed to expressing their true feelings on the cyberspace nowadays, especially on social media like Twitter, Instagram or Facebook. Therefore, we choose to communicate with elderly through a new generation approach by augmented reality. We take advantage of image detection techniques from Artivive, so that we can see AR effects when scanning T-shirts we designed. This is the part I am mainly responsible for, creating AR effects by After Effect and Artivive.
+          </div>
+        </div>
+        <div class="image">
+          <div class="pic">
+            <img src="./畢業製作/ex2.jpeg">
+          </div>
+          <div class="pic">
+            <img src="./畢業製作/ex3.jpeg">
+          </div>
+        </div>
+        <div class="process">
+          <div class="text">
+            <h1>Test</h3>
+            <h3>Artivive + Social Media</h3>
+            Before the clothes are printed with illustrations we designed, we attach paper to the clothes to confirm how AR works in Artivive. The image detection doesn't have much of a problem. And we succeed to upload works on social media. But We find that the words in the AR effects are often mixed with the background or other similar colors, blurring the visual focus. In addition, some text or images are too detailed or too thin to be presented in AR.
+          </div>
+          <div class="text">
+            <h1>Solution</h3>
+            <h3>Redesign the effects</h3>
+            We bolded the text and also added color blocks instead of linear graphics. At the same time, in order to avoid the background color and the color in AR effects from mixing together, we use a solid color background for the audience to take pictures or recording videos in the exhibition venue, minimizing the problem of blurring the visual focus.
+          </div>
+          <div class="pic">
+            <video src="./畢業製作B/B.mp4" width="70%" autoplay loop controls>
+          </div>
+        </div>
+        <div class="A">
+          <div class="V">
+            <video src="./吃苦/吃苦當吃補參考.mp4" width="90%" autoplay loop>
+          </div>
+          <div class="V">
+            <video src="./年輕/年輕就是本錢.mp4" width="90%" autoplay loop>
+          </div>
+          <div class="V">
+            <video src="./心靜/心靜自然涼參考.mp4" width="90%" autoplay loop>
+          </div>
+          <div class="V">
+            <video src="./能者/能者多勞參考.mp4" width="90%" autoplay loop>
+          </div>
+          <div class="V">
+            <video src="./金錢/金錢買不到快樂參考.mp4" width="90%" autoplay loop>
+          </div>
+        </div>
+      </container>
+
+      <script src="./js/old-sayings.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+      <script src="https://player.vimeo.com/api/player.js"></script>
+</body>
+</html>
