@@ -428,6 +428,15 @@ UIA-TIMELINE
 	width: min(100%, var(--uia-timeline-content-max-width));
 }
 
+a .company{
+	text-decoration: none;
+	color: #151515;
+}
+a .company:hover{
+	background-color: #1500ff ;
+	color: #ffffff;
+	transition:cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
 @media (max-width: 300px){
 
 	:root{
@@ -915,12 +924,4 @@ align-items: baseline;
 	flex-grow: 1;
 	justify-content: center;	
 }
-.company{
-	text-decoration: none;
-	color: #151515;
-}
-.company:hover{
-	background-color: #1500ff ;
-	color: #ffffff;
-	transition:cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
-}
+
