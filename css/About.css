@@ -428,15 +428,12 @@ UIA-TIMELINE
 	width: min(100%, var(--uia-timeline-content-max-width));
 }
 
-a .company{
-	text-decoration: none;
-	color: #151515;
-}
-a .company:hover{
-	background-color: #1500ff ;
-	color: #ffffff;
-	transition:cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
-}
+/*
+=====
+TEMPLATE CORE STYLES
+=====
+*/
+
 @media (max-width: 300px){
 
 	:root{
@@ -875,6 +872,31 @@ align-items: baseline;
 	}
 }
 
+/*
+=====
+MY PROMO
+=====
+*/
+/* Please, don't fear to delete the following CSS. It doesn't affect the template.  */
+
+.do-not-forget-to-delete-it{
+	display: block;
+	padding-block-end: var(--space-xl);
+	margin-block-end: var(--space-m);
+	padding-inline: var(--space-xl);
+	background-color: var(--main-mode-color);
+	position: relative;
+	isolation: isolate;
+}
+
+.do-not-forget-to-delete-it::before{
+	content: "";
+	inset: calc(-1  * var(--space-2xl)) 0 0;
+	position: absolute;
+	background-color: var(--main-mode-color);
+	z-index: -1;
+}
+
 .page__substack{
 	--substack-background-color: #fff3ed;	
 	--substack-button-background-color: #ffd3bd;
@@ -924,4 +946,12 @@ align-items: baseline;
 	flex-grow: 1;
 	justify-content: center;	
 }
-
+.company{
+	text-decoration: none;
+	color: #151515;
+}
+.company:hover{
+	background-color: #1500ff ;
+	color: #ffffff;
+	transition:cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
