@@ -1,13 +1,4 @@
 :root{
-	/*
-	- line height (line spacing) to at least 1.5 times the font size.
-	The 1.4.12 requirements from WcAG 2.2 https://www.w3.org/TR/WcAG22/#text-spacing
-
-	- spacing following paragraphs to at least 2 times the font size;
-	The 1.4.12 requirements from WcAG 2.2 https://www.w3.org/TR/WcAG22/#text-spacing
-	This gap should be computed taking into account the line-height
-	*/
-
 	--uds-typography-main-line-height: var(--ds-typography-main-line-height, 1.75);
 	--uds-typography-main-margin: var(--ds-typography-main-margin, 1.25em);
 }
@@ -870,31 +861,6 @@ align-items: baseline;
 	.page__experience{
 		padding-inline-start: 12%;
 	}
-}
-
-/*
-=====
-MY PROMO
-=====
-*/
-/* Please, don't fear to delete the following CSS. It doesn't affect the template.  */
-
-.do-not-forget-to-delete-it{
-	display: block;
-	padding-block-end: var(--space-xl);
-	margin-block-end: var(--space-m);
-	padding-inline: var(--space-xl);
-	background-color: var(--main-mode-color);
-	position: relative;
-	isolation: isolate;
-}
-
-.do-not-forget-to-delete-it::before{
-	content: "";
-	inset: calc(-1  * var(--space-2xl)) 0 0;
-	position: absolute;
-	background-color: var(--main-mode-color);
-	z-index: -1;
 }
 
 .page__substack{
